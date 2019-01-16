@@ -1,0 +1,141 @@
+body {
+  background-color: #f9fafc;
+  font-family: 'Open Sans', sans-serif;
+  color: #69696a;
+  display: flex;
+  flex-direction: column;
+}
+/* Ensuring the circles are not displayed on the mobile version */
+#body-two {
+  display: none;
+}
+.logo {
+  color: black;
+  text-transform: lowercase;
+}
+ul {
+  list-style-type: none;
+  margin-left: -10px;
+  padding-left: 10px;
+}
+li {
+  margin-bottom: 10px;
+}
+.nav-btn {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+  padding: 7px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+h3 {
+  color: black;
+  font-size: 1.5em;
+}
+p {
+  border-left: 2px solid gray;
+  padding-left: 20px;
+  padding-top: 0;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+.scrll-btn {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+  padding: 7px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+/* media query for switching to desktop */
+@media only screen and (min-width: 480px) {
+  body {
+    display: flex;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: -6px;
+  }
+  li {
+    margin: 20px;
+    
+  }
+  .nav-btn {
+    margin-top: -10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .logo {
+    margin-left: 20px;
+    margin-top: 14px;
+  }
+  /* styling the main body of the desktop, with the paragraph and the circles next to eachother */
+  .body-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #body-one {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+  #body-two {
+    display: flex;
+    width: 45%;
+  }
+    .dotone {
+      display: flex;
+      height: 250px;
+      width: 250px;
+      background-color:rgba(247, 136, 167, 0.6);
+      border-radius: 50%;
+      position: absolute;
+      right: 230px;
+      top: 150px;
+  }
+  .dottwo {
+    display: flex;
+      height: 175px;
+      width: 175px;
+      background-color: rgba(207, 130, 213, 0.6);
+      border-radius: 50%;
+      position: absolute;
+      right: 140px;
+      top: 100px
+  }
+  .dotthree {
+      display: flex;
+      height: 225px;
+      width: 225px;
+      background-color: rgba(247, 193, 162, 0.7);
+      border-radius: 50%;
+      position: absolute;
+      right: 110px;
+      top: 200px;
+  }
+  /* styling the scroll down button on the desktop */
+  footer {
+    display: flex;
+    justify-content: center;
+    margin: 10em;
+  }
+  .scrll-btn {
+    width: 15%;
+  }
+}
